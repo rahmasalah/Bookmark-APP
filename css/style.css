@@ -1,0 +1,90 @@
+/* font-family: 'Kalnia', serif;
+font-family: 'Merriweather', serif;
+font-family: 'Mukta', sans-serif; */
+h1{
+    font-family: 'Kalnia', serif;
+    font-size: 40px;
+}
+
+h3{
+    font-family: 'Kalnia', serif;
+    font-size: 25px;
+    font-style: italic;
+}
+
+label,input{
+    font-family: 'Merriweather', serif;
+    font-size: 20px;
+}
+    
+
+#home{
+    background-color: #163020;
+}
+
+#layer{
+    background-color: #0000009f;
+}
+
+#home .bookmark{
+    background-color: #304D30;
+    color: #EEF0E5 ;
+    box-shadow: 0 0 15px #fff inset;
+}
+
+#home .bookmark button{
+    background-color: #706233d1;
+    color: #EEF0E5;
+    box-shadow:  2px 2px 10px #70623371;
+    font-family: 'Kalnia', serif;
+    font-size: 17px;
+    font-style: italic;
+    
+}
+
+#home .bookmark input::placeholder{
+    color: #706233d1 ;
+}
+
+#home .bookmark table{
+    background-color: #706233;
+    font-family: 'Mukta', sans-serif;
+    font-size: 19px;
+}
+
+
+#home .bookmark table th{
+    color: #B0926A;
+}
+
+#home .bookmark table tbody td,#home .bookmark input,#home .bookmark a{
+    color: #706233;
+    font-family: 'Kalnia', serif;
+    font-size: 17px;
+}
+
+.form-control:focus{
+    box-shadow: 0 0 15px transparent inset;
+    border-color:  #B0926A;
+} 
+
+
+
+#message{
+    background-color: #706233;
+    width: 400px;
+    height: 300px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 99;
+    color: #EEF0E5;
+
+}
+
+
+#message  i{
+    color: #f1d471;
+    font-size: 20px;
+    padding-right: 5px;
+}

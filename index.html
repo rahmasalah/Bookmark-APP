@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="book.ico" type="image/x-icon">
+    <title>BookMark</title>
+
+
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Kalnia:wght@500&family=Merriweather:ital@1&family=Mukta&display=swap" rel="stylesheet">
+
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="css/all.min.css">
+
+    <!-- bootstrap style -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- main style -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <main>
+        <section id="home" class="min-vh-100 d-flex position-relative">
+            <div id="layer" class="w-100 h-100 position-absolute d-none"></div>
+            <div id="message" class=" position-absolute rounded-3 alert d-none">
+                <span>
+                    <i class="fa-solid fa-circle-exclamation pe-2"></i>
+                </span>
+                <h5 class="d-inline-block text-center">You Have Something Wrong....</h5>
+                <h6 class="mt-5">
+                    <i class="fa-solid fa-bell"></i>
+                    The Name must start with capital letter and at least contain 3 letter.
+                </h6>
+
+                <h6 class="my-4">
+                    <i class="fa-solid fa-bell"></i>
+                    Make Sure You Write The Link Turely.
+                </h6>
+
+
+            </div>
+            <div class="bookmark w-75 m-auto p-5 rounded-5">
+                <div class="title text-center">
+                    <h1>BookMarker</h1>
+                <hr class="my-3">
+    
+                <h3>Bookmark your favorite sites </h3>
+    
+                </div>
+    
+                <div class="my-3">
+                    <label for="bookmarkName"  class="my-2"> <i class="fa fa-bookmark pe-2"></i>Site Name</label>
+                    <input type="text" class="form-control" id="bookmarkName" oninput="ValidationName()" placeholder=" Bookmark Name">
+                </div>
+    
+                <div class="mb-3">
+                    <label for="bookmarkLink" class="mb-2"><i class="fa fa-link pe-2"></i>Site URL</label>
+                    <input oninput="ValidationUrl()" type="text" class="form-control" id="bookmarkLink" placeholder=" Website URL">
+                </div>
+    
+                <button class="rounded-3 p-3 d-flex mx-auto border-0" onclick="addLink()">Submit</button>
+    
+                <hr class="my-3">
+    
+                <table class="table text-center">
+                    <thead>
+                        <tr>
+                            <th>Index</th>
+                            <th>Website Name</th>
+                            <th>Visit</th>
+                            <th>Delete</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tableBody">
+                        
+                    </tbody>
+    
+                </table>
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- bootstrap js -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <!-- main js -->
+    <script src="js/main.js"></script>
+</body>
+</html>
