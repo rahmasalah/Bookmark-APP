@@ -10,7 +10,7 @@ var message=document.getElementById("exampleModal")
 var linksList=[]
 
 function addLink(){
-    if(ValidationName(),ValidationUrl()){
+    if(ValidationName()&&ValidationUrl()){
         var link={
             name:bookmarkName.value,
             url:bookmarkLink.value
