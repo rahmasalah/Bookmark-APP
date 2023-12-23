@@ -23,21 +23,13 @@
     
     <main>
         <section id="home" class="min-vh-100 d-flex position-relative">
-            <div id="layer" class="w-100 h-100 position-absolute d-none"></div>
-            <div id="message" class=" position-absolute rounded-3 alert d-none">
+            <div id="layer" class="w-100 h-100 position-absolute d-none modal"></div>
+            <div id="message" class=" position-absolute rounded-3  d-none">
                 <span>
-                    <i class="fa-solid fa-circle-exclamation pe-2"></i>
+                    
                 </span>
-                <h5 class="d-inline-block text-center">You Have Something Wrong....</h5>
-                <h6 class="mt-5">
-                    <i class="fa-solid fa-bell"></i>
-                    Make Sure You Write First Letter capital and at least contain 3 letter.
-                </h6>
-
-                <h6 class="my-4">
-                    <i class="fa-solid fa-bell"></i>
-                    Make Sure You Write The Link Turely.
-                </h6>
+                <h5></h5>
+                
 
 
             </div>
@@ -60,7 +52,7 @@
                     <input oninput="ValidationUrl()" type="text" class="form-control" id="bookmarkLink" placeholder=" Website URL">
                 </div>
     
-                <button class="rounded-3 p-3 d-flex mx-auto border-0" onclick="addLink()">Submit</button>
+                <button class="rounded-3 p-3 d-flex mx-auto border-0" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="addLink()">Submit</button>
     
                 <hr class="my-3">
     
@@ -79,6 +71,30 @@
     
                 </table>
             </div>
+
+  
+  <!-- Modal -->
+  <div class="modal fade d-none" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title fs-5" id="exampleModalLabel"><i class="fa-solid fa-circle-exclamation pe-2"></i>You Have Something Wrong....</h3>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <h6 class="mt-3">
+                <i class="fa-solid fa-bell"></i>
+                Make Sure You Write First Letter capital and at least contain 3 letter.
+            </h6>
+
+            <h6 class="my-4">
+                <i class="fa-solid fa-bell"></i>
+                Make Sure You Write The Link Turely.
+            </h6>
+        </div>
+      </div>
+    </div>
+  </div>
         </section>
 
     </main>

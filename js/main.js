@@ -1,7 +1,10 @@
 var bookmarkName = document.getElementById("bookmarkName")
 var bookmarkLink = document.getElementById("bookmarkLink")
-var message=document.getElementById("message")
-var layer = document.getElementById("layer")
+var message=document.getElementById("exampleModal")
+
+
+
+
 
 
 var linksList=[]
@@ -17,15 +20,13 @@ function addLink(){
         console.log(linksList)
         clearForm()
         displayForm()
-
         message.classList.add("d-none")
-        layer.classList.add("d-none")
+        
 
     }
 
     else{
         message.classList.remove("d-none")
-        layer.classList.remove("d-none")
         
     }
 
@@ -70,7 +71,7 @@ function deleteItem(index){
 
 
 function ValidationName(){
-    var regexName=/^\w{3,15}$/
+    var regexName=/^\w{3,8}$/
     var text = bookmarkName.value
     if(regexName.test(text)){
         bookmarkName.classList.add("is-valid")

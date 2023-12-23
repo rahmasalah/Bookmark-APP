@@ -68,16 +68,16 @@ label,input{
     border-color:  #B0926A;
 } 
 
+.modal-backdrop.show{
+    display: none;
+}
 
+.btn-close{
+    --bs-btn-close-focus-shadow: transparent;
+}
 
-#message{
-    background-color: #706233;
-    width: 25rem;
-    height: 18.75rem;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    z-index: 99;
+#exampleModal .modal-body, #exampleModal .modal-header{
+    background-color:  #B0926A;
     color: #EEF0E5;
 
 }
@@ -93,6 +93,12 @@ label,input{
 @media screen and (max-width:576px) {
 	html{
         font-size: 12px;
+    }
+}
+
+@media screen and (min-width:576px) and (max-width:700px) {
+	html{
+        font-size: 14px;
     }
 }
 
