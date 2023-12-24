@@ -89,7 +89,7 @@ function ValidationName(){
 
 
 function ValidationUrl(){
-    var regexUrl=/\.com?$/
+    var regexUrl=/\.com?\/?$/
     var url = bookmarkLink.value
     if(regexUrl.test(url)){
         bookmarkLink.classList.add("is-valid")
