@@ -46,7 +46,7 @@ function displayForm(){
         <td>${i}</td>
         <td>${linksList[i].name}</td>
         <td>
-            <a href="${"https://"+linksList[i].url}" target="_blank" class="text-decoration-none">
+            <a href="${linksList[i].url}" target="_blank" class="text-decoration-none">
                 <i class="fa fa-eye pe-2"></i>
                 Visit</a>
         </td>
