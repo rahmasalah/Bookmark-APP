@@ -46,7 +46,7 @@ function displayForm(){
         <td>${i}</td>
         <td>${linksList[i].name}</td>
         <td>
-            <a href="${linksList[i].url}" target="_blank" class="text-decoration-none">
+         <a href="${checkLink(i)}" target="_blank" class="text-decoration-none">
                 <i class="fa fa-eye pe-2"></i>
                 Visit</a>
         </td>
@@ -102,6 +102,17 @@ function ValidationUrl(){
         return false
     }
 }
+
+
+function checkLink(i){
+    if( linksList[i].url.includes("https://")){
+       return linksList[i].url
+    }
+    else{
+        return "https://"+linksList[i].url
+    }
+}
+
 
 
 
